@@ -20,6 +20,6 @@ prodigal-gv -t model.trn -i genome.fna
 
 ---
 
-Prodigal was written by [Doug Hyatt](https://github.com/hyattpd/) and it's usage should be acknowledged.
+Prodigal was written by [Doug Hyatt](https://github.com/hyattpd/) and its usage should be acknowledged.
 
 > Hyatt, D., Chen, G.-L., LoCascio, P.F., Land, M.L., Larimer, F.W., and Hauser, L.J. (2010). [Prodigal: prokaryotic gene recognition and translation initiation site identification](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-119). BMC Bioinformatics *11*, 119.
