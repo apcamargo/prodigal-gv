@@ -40,6 +40,43 @@ void usage(char *);
 void help();
 int copy_standard_input_to_file(char *, int);
 
+void print_1d_array(int dim1, double arr[dim1]) {
+  printf("{ ");
+  for (int i = 0; i < dim1; i++) {
+    if (i < (dim1 - 1)) {
+      printf("%.3f, ", arr[i]);
+    } else {
+      printf("%.3f }", arr[i]);
+    }
+  }
+}
+
+void print_2d_array(int dim1, int dim2, double arr[dim1][dim2]) {
+  printf("{");
+  for (int i = 0; i < dim1; i++) {
+    if (i < (dim1 - 1)) {
+      print_1d_array(dim2, arr[i]);
+      printf(",\n");
+    } else {
+      print_1d_array(dim2, arr[i]);
+      printf("}");
+    }
+  }
+}
+
+void print_3d_array(int dim1, int dim2, int dim3, double arr[dim1][dim2][dim3]) {
+  printf("{");
+  for (int i = 0; i < dim1; i++) {
+    if (i < (dim1 - 1)) {
+      print_2d_array(dim2, dim3, arr[i]);
+      printf(",\n");
+    } else {
+      print_2d_array(dim2, dim3, arr[i]);
+      printf("}");
+    }
+  }
+}
+
 int main(int argc, char *argv[]) {
 
   int rv, slen, nn, ng, i, ipath, *gc_frame, do_training, output, max_phase;
@@ -209,6 +246,29 @@ int main(int argc, char *argv[]) {
       exit(2);
     }
     rv = read_training_file(train_file, &tinf);
+
+    /* Print model parameters */
+    printf("MODEL PARAMETERS:\n");
+    printf("%.4f, ", tinf.gc);
+    printf("%i, ", tinf.trans_table);
+    printf("%.3f, ", tinf.st_wt);
+    print_1d_array(3, tinf.bias);
+    printf(", ");
+    print_1d_array(3, tinf.type_wt);
+    printf(", ");
+    printf("%i,\n", tinf.uses_sd);
+    print_1d_array(28, tinf.rbs_wt);
+    printf(",\n");
+    print_2d_array(32, 4, tinf.ups_comp);
+    printf(",\n");
+    print_3d_array(4, 4, 4096, tinf.mot_wt);
+    printf(",\n");
+    printf("%.3f, ", tinf.no_mot);
+    print_1d_array(4096, tinf.gene_dc);
+    printf("\n");
+    exit(0);
+    /* Finish printing model parameters */
+
     if(rv == 1) do_training = 1;
     else {
       if(force_nonsd == 1) {

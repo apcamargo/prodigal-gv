@@ -10,6 +10,14 @@ A fork of [Prodigal](https://github.com/hyattpd/Prodigal) meant to improve gene 
 prodigal-gv -p meta -i genome.fna -a proteins.faa > /dev/null 2>&1
 ```
 
+## `print-model` branch
+
+The `print-model` branch will print a trained Prodigal provided using the `-t` argument:
+
+```bash
+prodigal-gv -t model.trn -i genome.fna
+```
+
 ---
 
 Prodigal was written by [Doug Hyatt](https://github.com/hyattpd/) and it's usage should be acknowledged.
