@@ -79,6 +79,8 @@ void initialize_metagenomic_bins(struct _metagenomic_bin *meta) {
   initialize_metagenome_51(meta[51].tinf);
   initialize_metagenome_52(meta[52].tinf);
   initialize_metagenome_53(meta[53].tinf);
+  initialize_metagenome_54(meta[54].tinf);
+  initialize_metagenome_55(meta[55].tinf);
 
   sprintf(meta[0].desc, "%d|%s|%s|%.1f|%d|%d", 0,
           "Mycoplasma_bovis_PG45",
@@ -242,4 +244,10 @@ void initialize_metagenomic_bins(struct _metagenomic_bin *meta) {
   sprintf(meta[53].desc, "%d|%s|%s|%.1f|%d|%d", 53,
           "Acanthocystis_turfacea_Chlorella_virus_1",
           "V", 49.40, meta[53].tinf->trans_table, meta[53].tinf->uses_sd);
+  sprintf(meta[54].desc, "%d|%s|%s|%.1f|%d|%d", 55,
+          "Agate_code_15",
+          "V", 39.78, meta[55].tinf->trans_table, meta[55].tinf->uses_sd);
+  sprintf(meta[55].desc, "%d|%s|%s|%.1f|%d|%d", 56,
+          "Topaz_code_15",
+          "V", 34.06, meta[56].tinf->trans_table, meta[56].tinf->uses_sd);
 }

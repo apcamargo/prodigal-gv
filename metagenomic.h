@@ -29,7 +29,7 @@
 #include "node.h"
 
 #define NUM_BIN 6
-#define NUM_META 54
+#define NUM_META 56
 #define SAMPLE_LEN 120
 #define MAX_SAMPLE 200
 

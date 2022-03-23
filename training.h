@@ -107,5 +107,7 @@ void initialize_metagenome_50(struct _training *);
 void initialize_metagenome_51(struct _training *);
 void initialize_metagenome_52(struct _training *);
 void initialize_metagenome_53(struct _training *);
+void initialize_metagenome_54(struct _training *);
+void initialize_metagenome_55(struct _training *);
 
 #endif

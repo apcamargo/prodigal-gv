@@ -1,10 +1,12 @@
 # `prodigal-gv`
 
-A fork of [Prodigal](https://github.com/hyattpd/Prodigal) meant to improve gene calling for giant viruses. It includes four NCLDV models added to the metagenome mode:
+A fork of [Prodigal](https://github.com/hyattpd/Prodigal) meant to improve gene calling for giant viruses and viruses that use alternative genetic codes. It includes six models added to the metagenome mode:
 * *Acanthamoeba polyphaga mimivirus*
 * *Paramecium bursaria* Chlorella virus
 * *Acanthocystis turfacea* Chlorella virus
 * [VirSorter2](https://github.com/jiarong/VirSorter2)'s NCLDV gene model
+* [Topaz (genetic code 15)](https://www.biorxiv.org/content/10.1101/2021.08.26.457843v1.full)
+* [Agate (genetic code 15)](https://www.biorxiv.org/content/10.1101/2021.08.26.457843v1.full)
 
 ```bash
 prodigal-gv -p meta -i genome.fna -a proteins.faa > /dev/null 2>&1
