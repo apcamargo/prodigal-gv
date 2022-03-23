@@ -318,6 +318,8 @@ void record_gene_data(struct _gene *genes, int ng, struct _node *nod,
         strcat(genes[i].gene_data, buffer);
       }
     }
+    sprintf(buffer, ";genetic_code=%d", tinf->trans_table);
+    strcat(genes[i].gene_data, buffer);
     sprintf(buffer, ";gc_cont=%.3f", nod[ndx].gc_cont);
     strcat(genes[i].gene_data, buffer);
 
