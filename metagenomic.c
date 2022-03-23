@@ -244,10 +244,10 @@ void initialize_metagenomic_bins(struct _metagenomic_bin *meta) {
   sprintf(meta[53].desc, "%d|%s|%s|%.1f|%d|%d", 53,
           "Acanthocystis_turfacea_Chlorella_virus_1",
           "V", 49.40, meta[53].tinf->trans_table, meta[53].tinf->uses_sd);
-  sprintf(meta[54].desc, "%d|%s|%s|%.1f|%d|%d", 55,
+  sprintf(meta[54].desc, "%d|%s|%s|%.1f|%d|%d", 54,
           "Agate_code_15",
-          "V", 39.78, meta[55].tinf->trans_table, meta[55].tinf->uses_sd);
-  sprintf(meta[55].desc, "%d|%s|%s|%.1f|%d|%d", 56,
+          "V", 39.78, meta[54].tinf->trans_table, meta[54].tinf->uses_sd);
+  sprintf(meta[55].desc, "%d|%s|%s|%.1f|%d|%d", 55,
           "Topaz_code_15",
-          "V", 34.06, meta[56].tinf->trans_table, meta[56].tinf->uses_sd);
+          "V", 34.06, meta[55].tinf->trans_table, meta[55].tinf->uses_sd);
 }
