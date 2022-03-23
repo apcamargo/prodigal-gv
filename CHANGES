@@ -1,3 +1,7 @@
+VERSION 2.6.4-gv
+
+* Added two gene models using the genetic code 15 to the metagenome mode.
+
 VERSION 2.6.3-gv
 
 * Added four NCLDV gene models to the metagenome mode.
