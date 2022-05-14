@@ -36,6 +36,14 @@ make
 prodigal-gv -p meta -i genome.fna -a proteins.faa > /dev/null 2>&1
 ```
 
+## Parallelized execution
+
+[`parallel-prodigal-gv.py`](https://github.com/apcamargo/prodigal-gv/blob/master/parallel-prodigal-gv.py) is a script that allows parallelized execution of `prodigal-gv`:
+
+```
+./parallel-prodigal-gv.py -q -p meta -i genome.fna -a proteins.faa
+```
+
 ---
 
 Prodigal was written by [Doug Hyatt](https://github.com/hyattpd/) and its usage should be acknowledged.
