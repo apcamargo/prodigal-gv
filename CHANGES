@@ -1,3 +1,7 @@
+VERSION 2.8.0-gv
+
+* Added four gene models to the metagenome mode: three with the genetic code 11 and one with the genetic code 15.
+
 VERSION 2.7.0-gv
 
 * Added two gene models using the genetic code 15 to the metagenome mode.

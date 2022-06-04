@@ -81,6 +81,10 @@ void initialize_metagenomic_bins(struct _metagenomic_bin *meta) {
   initialize_metagenome_53(meta[53].tinf);
   initialize_metagenome_54(meta[54].tinf);
   initialize_metagenome_55(meta[55].tinf);
+  initialize_metagenome_56(meta[56].tinf);
+  initialize_metagenome_57(meta[57].tinf);
+  initialize_metagenome_58(meta[58].tinf);
+  initialize_metagenome_59(meta[59].tinf);
 
   sprintf(meta[0].desc, "%d|%s|%s|%.1f|%d|%d", 0,
           "Mycoplasma_bovis_PG45",
@@ -250,4 +254,16 @@ void initialize_metagenomic_bins(struct _metagenomic_bin *meta) {
   sprintf(meta[55].desc, "%d|%s|%s|%.1f|%d|%d", 55,
           "Topaz_code_15",
           "V", 34.06, meta[55].tinf->trans_table, meta[55].tinf->uses_sd);
+  sprintf(meta[56].desc, "%d|%s|%s|%.1f|%d|%d", 56,
+          "Gut_phage_code_15",
+          "V", 33.17, meta[56].tinf->trans_table, meta[56].tinf->uses_sd);
+  sprintf(meta[57].desc, "%d|%s|%s|%.1f|%d|%d", 57,
+          "Gut_phage_code_11a",
+          "V", 43.26, meta[57].tinf->trans_table, meta[57].tinf->uses_sd);
+  sprintf(meta[58].desc, "%d|%s|%s|%.1f|%d|%d", 58,
+          "Gut_phage_code_11b",
+          "V", 36.92, meta[58].tinf->trans_table, meta[58].tinf->uses_sd);
+  sprintf(meta[59].desc, "%d|%s|%s|%.1f|%d|%d", 59,
+          "Gut_phage_code_11c",
+          "V", 29.95, meta[59].tinf->trans_table, meta[59].tinf->uses_sd);
 }
