@@ -28,7 +28,7 @@
 #include "fptr.h"
 
 
-#define VERSION "2.8.0-gv"
+#define VERSION "2.9.0-gv"
 #define DATE "June, 2022"
 
 #define MIN_SINGLE_GENOME 20000
