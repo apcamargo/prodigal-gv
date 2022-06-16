@@ -43,7 +43,7 @@ prodigal-gv -p meta -i genome.fna -a proteins.faa > /dev/null 2>&1
 [`parallel-prodigal-gv.py`](https://github.com/apcamargo/prodigal-gv/blob/master/parallel-prodigal-gv.py) is a script that allows parallelized execution of `prodigal-gv`:
 
 ```
-./parallel-prodigal-gv.py -q -p meta -i genome.fna -a proteins.faa
+./parallel-prodigal-gv.py -t 8 -q -p meta -i genome.fna -a proteins.faa
 ```
 
 ---
