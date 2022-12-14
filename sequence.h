@@ -29,7 +29,7 @@
 #include "training.h"
 #include "fptr.h"
 
-#define MAX_SEQ 32000000
+#define MAX_SEQ 500000000
 #define MAX_LINE 10000
 #define WINDOW 120
 #define MASK_SIZE 50
