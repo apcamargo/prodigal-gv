@@ -28,8 +28,8 @@
 #include "fptr.h"
 
 
-#define VERSION "2.9.0-gv"
-#define DATE "June, 2022"
+#define VERSION "2.10.0-gv"
+#define DATE "December, 2022"
 
 #define MIN_SINGLE_GENOME 20000
 #define IDEAL_SINGLE_GENOME 100000
@@ -659,7 +659,7 @@ void help() {
   fprintf(stderr, " [-t training_file] [-v]\n");
   fprintf(stderr, "\n         -a:  Write protein translations to the selected ");
   fprintf(stderr, "file.\n");
-  fprintf(stderr, "         -c:  Closed ends.  Do not allow genes to run off ");
+  fprintf(stderr, "         -c:  Closed ends. Do not allow genes to run off ");
   fprintf(stderr, "edges.\n");
   fprintf(stderr, "         -d:  Write nucleotide sequences of genes to the ");
   fprintf(stderr, "selected file.\n");

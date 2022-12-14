@@ -12,18 +12,18 @@ A fork of [Prodigal](https://github.com/hyattpd/Prodigal) meant to improve gene 
 
 ## Installation
 
-`prodigal-gv` can be installed via [Conda/Mamba](https://anaconda.org/bioconda/prodigal-gv), pre-build binaries ([Linux](https://github.com/apcamargo/prodigal-gv/releases/download/2.9.0/prodigal-gv-linux) and [macOS](https://github.com/apcamargo/prodigal-gv/releases/download/2.9.0/prodigal-gv-macos)), or built from scratch:
+`prodigal-gv` can be installed via [Conda/Mamba](https://anaconda.org/bioconda/prodigal-gv), pre-build binaries ([Linux](https://github.com/apcamargo/prodigal-gv/releases/download/2.10.0/prodigal-gv-linux) and [macOS](https://github.com/apcamargo/prodigal-gv/releases/download/2.10.0/prodigal-gv-macos)), or built from scratch:
 
 ```
 # Conda/Mamba:
 conda install -c bioconda prodigal-gv
 
 # Pre-built binary (Linux):
-curl -L https://github.com/apcamargo/prodigal-gv/releases/download/2.9.0/prodigal-gv-linux -o prodigal-gv
+curl -L https://github.com/apcamargo/prodigal-gv/releases/download/2.10.0/prodigal-gv-linux -o prodigal-gv
 chmod +x prodigal-gv
 
 # Pre-built binary (macOS):
-curl -L https://github.com/apcamargo/prodigal-gv/releases/download/2.9.0/prodigal-gv-macos -o prodigal-gv
+curl -L https://github.com/apcamargo/prodigal-gv/releases/download/2.10.0/prodigal-gv-macos -o prodigal-gv
 chmod +x prodigal-gv
 
 # Buld from scratch

@@ -1,3 +1,7 @@
+VERSION 2.10.0-gv
+
+* Increase `MAX_GENES` and `MAX_SEQ`.
+
 VERSION 2.9.0-gv
 
 * Added two gene models for phages using the genetic code 11 to the metagenome mode.
