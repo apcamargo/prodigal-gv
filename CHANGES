@@ -1,3 +1,9 @@
+VERSION 2.11.0-gv
+
+* Fix buffer initialization in SD motif detection code.
+* Fix indexing error for reverse strand in `calc_orf_gc`.
+* Avoid skipping candidate RBS positions in `rbs_score`.
+
 VERSION 2.10.0-gv
 
 * Increase `MAX_GENES` and `MAX_SEQ`.
